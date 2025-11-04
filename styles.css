@@ -264,7 +264,21 @@ body {
     font-size: var(--font-size-5xl);
     font-weight: 800;
     line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.acronym-text {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-style: normal;
 }
 
 .gradient-text {
