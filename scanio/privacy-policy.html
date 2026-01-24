@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidad de Scanio - Cómo manejamos tus datos (o mejor dicho, cómo NO los manejamos)">
+    <title>Política de Privacidad - Scanio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/scanio-icon.png" alt="Scanio Logo" onerror="this.style.display='none'">
+                <h1>Scanio</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="privacy-policy.html">Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h2>Política de Privacidad</h2>
+            <p><strong>Fecha de última actualización:</strong> 24 de enero de 2026</p>
+            
+            <div class="info-box success">
+                <p><strong>Resumen ejecutivo:</strong> Scanio NO recopila, NO almacena y NO comparte tus datos personales ni el contenido de tus documentos. Todo se procesa localmente en tu dispositivo. Esta es una de las políticas de privacidad más cortas que leerás, porque realmente respetamos tu privacidad.</p>
+            </div>
+
+            <h3>1. Introducción</h3>
+            <p>
+                Esta Política de Privacidad describe cómo Scanio ("nosotros", "nuestro" o "la aplicación") maneja la información cuando utilizas nuestra aplicación móvil para Android.
+            </p>
+            <p>
+                <strong>Scanio está diseñado desde cero para funcionar 100% offline y sin recopilar datos personales.</strong> No tenemos servidores que almacenen tu información, no creamos cuentas de usuario y no rastreamos tu actividad.
+            </p>
+
+            <h3>2. Información que NO Recopilamos</h3>
+            <p>Scanio <strong>NO recopila, NO almacena y NO transmite</strong> la siguiente información:</p>
+            <ul>
+                <li><strong>Contenido de documentos:</strong> Las imágenes que capturas o importas nunca salen de tu dispositivo</li>
+                <li><strong>Texto reconocido por OCR:</strong> Todo el procesamiento OCR se hace localmente</li>
+                <li><strong>Nombres de archivos o carpetas:</strong> Tu organización de documentos es completamente privada</li>
+                <li><strong>Información personal identificable:</strong> Sin nombres, emails, teléfonos, direcciones</li>
+                <li><strong>Ubicación:</strong> No solicitamos ni accedemos a tu ubicación GPS</li>
+                <li><strong>Contactos:</strong> No accedemos a tu lista de contactos</li>
+                <li><strong>Historial de uso:</strong> No registramos qué documentos abres, cuándo o con qué frecuencia</li>
+                <li><strong>Identificadores de dispositivo:</strong> No recopilamos IMEI, números de serie o IDs únicos</li>
+            </ul>
+
+            <h3>3. Información que Procesa la Aplicación Localmente</h3>
+            <p>Scanio procesa la siguiente información <strong>exclusivamente en tu dispositivo</strong>, sin transmitirla a ningún servidor:</p>
+            <ul>
+                <li><strong>Imágenes capturadas:</strong> Se guardan en la carpeta de la aplicación en tu almacenamiento local</li>
+                <li><strong>Texto OCR:</strong> Extraído mediante Google ML Kit (procesamiento offline, sin envío a servidores)</li>
+                <li><strong>Metadatos de documentos:</strong> Nombres, fechas de creación, número de páginas (almacenados localmente en base de datos SQLite)</li>
+            </ul>
+            <p>
+                <strong>Importante:</strong> Toda esta información permanece en tu dispositivo. Si desinstalas Scanio, puedes eliminar todos estos datos desde la configuración de Android.
+            </p>
+
+            <h3>4. Permisos de Android</h3>
+            <p>Scanio solicita únicamente los siguientes permisos, y solo cuando son necesarios:</p>
+            
+            <h4>4.1. Cámara (CAMERA)</h4>
+            <p><strong>Propósito:</strong> Capturar fotos de documentos.<br>
+            <strong>Cuándo se usa:</strong> Solo cuando presionas el botón de cámara para escanear un documento.<br>
+            <strong>Procesamiento:</strong> Las imágenes se guardan directamente en tu dispositivo.</p>
+
+            <h4>4.2. Almacenamiento (MANAGE_EXTERNAL_STORAGE / READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE)</h4>
+            <p><strong>Propósito:</strong> Guardar y leer tus documentos escaneados, importar imágenes/PDFs desde tu galería.<br>
+            <strong>Cuándo se usa:</strong> Al guardar capturas, importar archivos o exportar PDFs.<br>
+            <strong>Alcance:</strong> Solo accedemos a la carpeta específica de Scanio y a archivos que tú seleccionas explícitamente.</p>
+
+            <p><strong>No solicitamos:</strong></p>
+            <ul>
+                <li>❌ Acceso a internet (INTERNET) - No necesario, la app funciona 100% offline</li>
+                <li>❌ Ubicación (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION)</li>
+                <li>❌ Contactos (READ_CONTACTS)</li>
+                <li>❌ Micrófono (RECORD_AUDIO)</li>
+                <li>❌ Teléfono (READ_PHONE_STATE)</li>
+            </ul>
+
+            <h3>5. Uso de Google ML Kit (OCR Offline)</h3>
+            <p>
+                Scanio utiliza <strong>Google ML Kit Text Recognition</strong> para el reconocimiento óptico de caracteres (OCR). 
+            </p>
+            <ul>
+                <li><strong>Modo de operación:</strong> Completamente offline. El modelo de ML Kit se descarga una vez durante la instalación de la app y se ejecuta localmente en tu dispositivo.</li>
+                <li><strong>Transmisión de datos:</strong> Ninguna. Las imágenes nunca se envían a servidores de Google para procesamiento.</li>
+                <li><strong>Política de Google ML Kit:</strong> <a href="https://developers.google.com/ml-kit/terms" target="_blank">developers.google.com/ml-kit/terms</a></li>
+            </ul>
+
+            <h3>6. Publicidad (Solo Versión Gratuita)</h3>
+            <p>
+                La versión gratuita de Scanio muestra publicidad no invasiva mediante <strong>Google AdMob</strong>. 
+            </p>
+            
+            <h4>6.1. Qué Información Recopila AdMob</h4>
+            <p>Google AdMob puede recopilar automáticamente:</p>
+            <ul>
+                <li>ID de publicidad de Android (resettable desde Configuración → Google → Anuncios)</li>
+                <li>Dirección IP (aproximada, no exacta)</li>
+                <li>Información del dispositivo (modelo, versión de Android, resolución de pantalla)</li>
+                <li>Información de interacción con anuncios (clics, impresiones)</li>
+            </ul>
+            <p><strong>Importante:</strong> AdMob NO tiene acceso al contenido de tus documentos, nombres de archivos ni texto OCR. Solo recibe información técnica del dispositivo para mostrar anuncios relevantes.</p>
+
+            <h4>6.2. Cómo Desactivar Publicidad Personalizada</h4>
+            <p>Puedes optar por no recibir publicidad personalizada:</p>
+            <ul>
+                <li><strong>Android:</strong> Configuración → Google → Anuncios → Desactivar personalización de anuncios</li>
+                <li><strong>Scanio Premium:</strong> Actualiza a la versión premium para eliminar completamente los anuncios</li>
+            </ul>
+
+            <h4>6.3. Políticas de AdMob</h4>
+            <ul>
+                <li><strong>Política de privacidad de Google:</strong> <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+                <li><strong>Cómo usa Google los datos de apps:</strong> <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a></li>
+            </ul>
+
+            <h3>7. Compartir y Exportar Documentos</h3>
+            <p>
+                Cuando compartes o exportas un documento desde Scanio (por ejemplo, enviar un PDF por WhatsApp o email):
+            </p>
+            <ul>
+                <li>El archivo se envía directamente desde tu dispositivo a la app de destino que elijas</li>
+                <li>Scanio NO actúa como intermediario ni tiene acceso a esa transmisión</li>
+                <li>El contenido compartido queda sujeto a las políticas de privacidad de la app de destino (WhatsApp, Gmail, etc.)</li>
+            </ul>
+            <p><strong>Recomendación:</strong> Solo comparte documentos con apps y contactos de confianza.</p>
+
+            <h3>8. Almacenamiento de Datos</h3>
+            <p>Todos los datos generados por Scanio se almacenan localmente en tu dispositivo Android:</p>
+            <ul>
+                <li><strong>Ubicación:</strong> Carpeta interna de la app o almacenamiento externo (según tu configuración de Android)</li>
+                <li><strong>Base de datos local:</strong> SQLite almacena metadatos (nombres de documentos, fechas, índice OCR)</li>
+                <li><strong>Sin sincronización en la nube:</strong> Scanio no ofrece backup automático en la nube. Si desinstala la app, los datos se pierden a menos que los hayas exportado manualmente</li>
+            </ul>
+
+            <h3>9. Seguridad</h3>
+            <p>
+                Aunque Scanio no transmite datos a servidores externos, implementamos las siguientes medidas de seguridad:
+            </p>
+            <ul>
+                <li>Almacenamiento de archivos en carpeta privada de la app (requiere permisos de root para acceder externamente)</li>
+                <li>No almacenamos contraseñas ni información sensible (porque no tenemos sistema de cuentas)</li>
+                <li>Código auditado para prevenir vulnerabilidades comunes (inyección SQL, path traversal, etc.)</li>
+            </ul>
+            <p>
+                <strong>Responsabilidad del usuario:</strong> Tu dispositivo es tu responsabilidad. Te recomendamos:
+            </p>
+            <ul>
+                <li>Usar bloqueo de pantalla (PIN, patrón, huella)</li>
+                <li>No hacer root de tu dispositivo (aumenta riesgos de seguridad)</li>
+                <li>Exportar copias de seguridad manualmente de documentos importantes</li>
+            </ul>
+
+            <h3>10. Transferencias Internacionales</h3>
+            <p>
+                <strong>No aplicable.</strong> Scanio no transfiere datos fuera de tu dispositivo, por lo que no hay transferencias internacionales de datos personales.
+            </p>
+            <p>
+                La única excepción son los datos técnicos recopilados por Google AdMob (versión gratuita), que pueden ser procesados en servidores de Google en EE.UU. o la UE según las políticas de Google.
+            </p>
+
+            <h3>11. Derechos del Usuario (GDPR / CCPA)</h3>
+            <p>
+                Dado que Scanio <strong>no recopila datos personales</strong>, la mayoría de derechos GDPR/CCPA no aplican. Sin embargo, para transparencia:
+            </p>
+            <ul>
+                <li><strong>Derecho de acceso:</strong> Todos tus datos están en tu dispositivo. Puedes acceder a ellos en cualquier momento desde la app o explorando la carpeta de Scanio.</li>
+                <li><strong>Derecho de eliminación:</strong> Desinstalar la app elimina todos los datos asociados. También puedes borrar documentos individualmente desde la app.</li>
+                <li><strong>Derecho de portabilidad:</strong> Exporta tus documentos a PDF o JPG en cualquier momento.</li>
+                <li><strong>Derecho de oposición:</strong> No hay procesamiento automatizado de datos personales, por lo que no hay nada a lo que oponerse.</li>
+            </ul>
+
+            <h3>12. Menores de Edad</h3>
+            <p>
+                Scanio no está diseñado específicamente para menores de 13 años, pero dado que no recopilamos información personal, puede ser usado por personas de todas las edades bajo supervisión parental apropiada.
+            </p>
+            <p>
+                <strong>Publicidad:</strong> Los anuncios mostrados por Google AdMob están sujetos a las políticas de Google sobre contenido apropiado para menores. Hemos configurado AdMob para cumplir con COPPA (Children's Online Privacy Protection Act).
+            </p>
+
+            <h3>13. Cambios en Esta Política</h3>
+            <p>
+                Podemos actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en la aplicación o requisitos legales. Te notificaremos de cambios significativos mediante:
+            </p>
+            <ul>
+                <li>Actualización de la fecha de "Última actualización" en la parte superior</li>
+                <li>Notificación dentro de la app (si el cambio afecta sustancialmente tu privacidad)</li>
+            </ul>
+            <p>
+                El uso continuado de Scanio después de cambios en esta política constituye tu aceptación de dichos cambios.
+            </p>
+
+            <h3>14. Transparencia Total</h3>
+            <div class="info-box">
+                <p><strong>Código abierto (planificado):</strong> Estamos considerando abrir el código fuente de Scanio para que cualquier persona pueda auditar cómo funciona la app y verificar que cumplimos con nuestras promesas de privacidad.</p>
+            </div>
+
+            <h3>15. Contacto</h3>
+            <p>
+                Si tienes preguntas, inquietudes o solicitudes relacionadas con esta Política de Privacidad, puedes contactarnos:
+            </p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:admin@vmad.eu">admin@vmad.eu</a></li>
+                <li><strong>Soporte:</strong> <a href="support.html">Centro de Soporte Scanio</a></li>
+                <li><strong>Tiempo de respuesta:</strong> Intentaremos responder en menos de 72 horas</li>
+            </ul>
+
+            <h3>16. Jurisdicción y Ley Aplicable</h3>
+            <p>
+                Esta Política de Privacidad se rige por las leyes de España y la Unión Europea, incluyendo el Reglamento General de Protección de Datos (GDPR).
+            </p>
+
+            <div class="info-box success">
+                <h4>✅ Resumen de Compromisos</h4>
+                <ul>
+                    <li>✅ Sin recopilación de datos personales</li>
+                    <li>✅ Sin creación de cuentas o perfiles</li>
+                    <li>✅ Sin transmisión de contenido de documentos</li>
+                    <li>✅ OCR 100% offline</li>
+                    <li>✅ Sin acceso a ubicación, contactos o llamadas</li>
+                    <li>✅ Publicidad mínima y removible (upgrade a premium)</li>
+                    <li>✅ Transparencia total sobre permisos</li>
+                </ul>
+                <p><strong>Scanio: Tu privacidad es nuestra prioridad.</strong></p>
+            </div>
+        </section>
+
+        <div class="last-updated">
+            <p><strong>Última actualización:</strong> 24 de enero de 2026 | <strong>Versión:</strong> 1.0</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Scanio</h4>
+                <ul>
+                    <li><a href="index.html">Acerca de</a></li>
+                    <li><a href="#">Descargar App</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:admin@vmad.eu">admin@vmad.eu</a></li>
+                    <li><a href="support.html">Centro de Soporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Scanio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

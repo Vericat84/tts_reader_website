@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro de Soporte Scanio - Preguntas frecuentes y ayuda">
+    <title>Soporte - Scanio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/scanio-icon.png" alt="Scanio Logo" onerror="this.style.display='none'">
+                <h1>Scanio</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="privacy-policy.html">Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h2>Centro de Soporte</h2>
+            <p>¿Necesitas ayuda con Scanio? Aquí encontrarás respuestas a las preguntas más frecuentes.</p>
+
+            <div class="info-box">
+                <p><strong>Contacto directo:</strong> Si no encuentras lo que buscas, escríbenos a <a href="mailto:admin@vmad.eu">admin@vmad.eu</a> e intentaremos responder en menos de 72 horas.</p>
+            </div>
+
+            <h3>📱 Uso Básico</h3>
+
+            <h4>¿Cómo escaneo un documento?</h4>
+            <ol>
+                <li>Abre Scanio y toca el botón de <strong>Cámara</strong> en la pantalla principal</li>
+                <li>Apunta a tu documento con buena iluminación</li>
+                <li>Toca el botón de captura para tomar la foto</li>
+                <li>La página se guarda automáticamente en el documento actual</li>
+                <li>Repite para añadir más páginas al mismo documento</li>
+            </ol>
+
+            <h4>¿Cómo creo un nuevo documento?</h4>
+            <ol>
+                <li>Toca el botón <strong>+ Crear Carpeta</strong> en la pantalla principal</li>
+                <li>Escribe un nombre para tu documento (ej: "Factura Mayo 2026")</li>
+                <li>Toca Aceptar</li>
+                <li>Abre el documento y empieza a capturar páginas</li>
+            </ol>
+
+            <h4>¿Cómo importo imágenes o PDFs existentes?</h4>
+            <ol>
+                <li>Abre el documento donde quieres importar</li>
+                <li>Toca el botón <strong>Importar</strong> (icono de galería)</li>
+                <li>Selecciona una o varias imágenes, o un archivo PDF</li>
+                <li>Las páginas se añaden automáticamente con numeración correcta</li>
+            </ol>
+
+            <h4>¿Cómo organizo mis documentos?</h4>
+            <ul>
+                <li><strong>Crear carpetas:</strong> Usa el botón "+ Crear Carpeta" para organizar por categorías</li>
+                <li><strong>Renombrar:</strong> Mantén pulsado un documento y selecciona "Renombrar"</li>
+                <li><strong>Eliminar:</strong> Mantén pulsado y selecciona "Eliminar"</li>
+                <li><strong>Ordenar:</strong> Toca el icono de ordenación para cambiar entre fecha y nombre</li>
+            </ul>
+
+            <h3>🔍 OCR y Búsqueda</h3>
+
+            <h4>¿Qué es OCR y cómo funciona?</h4>
+            <p>
+                OCR (Optical Character Recognition) es reconocimiento óptico de caracteres. Scanio usa <strong>Google ML Kit</strong> para extraer texto de tus documentos escaneados, completamente offline.
+            </p>
+            <p>
+                El OCR se ejecuta automáticamente al capturar o importar páginas (si está habilitado en Configuración). También puedes ejecutarlo manualmente desde el menú ⚙️ → "Ejecutar OCR".
+            </p>
+
+            <h4>¿Cómo busco texto en mis documentos?</h4>
+            <ol>
+                <li>Toca el icono de <strong>búsqueda</strong> 🔍 en la pantalla principal</li>
+                <li>Escribe una palabra o frase</li>
+                <li>Scanio buscará en todos los textos extraídos por OCR</li>
+                <li>Toca un resultado para abrir el documento y página correspondiente</li>
+            </ol>
+
+            <h4>¿Por qué el OCR no reconoce correctamente mi documento?</h4>
+            <p>La precisión del OCR depende de varios factores:</p>
+            <ul>
+                <li><strong>Iluminación:</strong> Asegúrate de tener buena luz al capturar</li>
+                <li><strong>Claridad:</strong> El texto debe estar nítido, sin desenfoque</li>
+                <li><strong>Contraste:</strong> Texto oscuro sobre fondo claro funciona mejor</li>
+                <li><strong>Idioma:</strong> ML Kit funciona mejor con español, inglés y otros idiomas latinos</li>
+                <li><strong>Fuente:</strong> Tipografías estándar funcionan mejor que manuscritas</li>
+            </ul>
+
+            <h4>¿El OCR requiere internet?</h4>
+            <p>
+                <strong>No.</strong> Scanio usa ML Kit en modo offline. El modelo se descarga una vez durante la instalación y todo el procesamiento se hace localmente en tu dispositivo.
+            </p>
+
+            <h3>📤 Exportación y Compartir</h3>
+
+            <h4>¿Cómo exporto un documento a PDF?</h4>
+            <ol>
+                <li>Abre el documento que quieres exportar</li>
+                <li>Toca el menú ⚙️ en la esquina superior derecha</li>
+                <li>Selecciona <strong>"Exportar PDF"</strong></li>
+                <li>Espera a que se genere el PDF (puede tardar unos segundos)</li>
+                <li>Toca "Ver" en la notificación para abrir el PDF generado</li>
+            </ol>
+
+            <h4>¿Dónde se guardan los PDFs exportados?</h4>
+            <p>
+                Los PDFs se guardan en: <code>Pictures/PhotoFileManager/Exports/[NombreDoc_timestamp]/</code>
+            </p>
+            <p>
+                Puedes acceder a ellos desde cualquier gestor de archivos o aplicación de galería.
+            </p>
+
+            <h4>¿Cómo comparto un documento?</h4>
+            <ol>
+                <li>Exporta el documento a PDF (ver arriba)</li>
+                <li>Desde la vista previa del PDF, toca el botón <strong>Compartir</strong></li>
+                <li>Selecciona la app donde quieres compartir (WhatsApp, Gmail, Drive, etc.)</li>
+            </ol>
+            <p>
+                <strong>Nota:</strong> También puedes compartir directamente desde el menú contextual (mantén pulsado el documento).
+            </p>
+
+            <h4>¿Puedo exportar solo algunas páginas de un documento?</h4>
+            <p>
+                En la versión actual, la exportación incluye todas las páginas del documento. La selección de páginas específicas está planificada para una futura actualización.
+            </p>
+
+            <h3>🔒 Privacidad y Seguridad</h3>
+
+            <h4>¿Mis documentos se suben a la nube?</h4>
+            <p>
+                <strong>No.</strong> Scanio funciona 100% offline. Tus documentos nunca salen de tu dispositivo a menos que tú los compartas explícitamente.
+            </p>
+
+            <h4>¿Necesito crear una cuenta?</h4>
+            <p>
+                <strong>No.</strong> Scanio no requiere ni siquiera ofrece cuentas de usuario. Descarga, instala y usa directamente.
+            </p>
+
+            <h4>¿Qué datos recopila Scanio?</h4>
+            <p>
+                Scanio no recopila datos personales ni contenido de tus documentos. La versión gratuita muestra publicidad de Google AdMob, que puede recopilar datos técnicos del dispositivo (ver <a href="privacy-policy.html">Política de Privacidad</a> completa).
+            </p>
+
+            <h4>¿Cómo elimino todos mis datos?</h4>
+            <ol>
+                <li>Ve a <strong>Configuración de Android</strong> → Apps → Scanio</li>
+                <li>Toca <strong>"Borrar datos"</strong> o <strong>"Desinstalar"</strong></li>
+                <li>Esto elimina todos los documentos, metadatos y configuración</li>
+            </ol>
+            <p>
+                <strong>Importante:</strong> Este proceso es irreversible. Exporta tus documentos importantes antes de hacerlo.
+            </p>
+
+            <h3>💰 Versión Premium</h3>
+
+            <h4>¿Cuál es la diferencia entre la versión gratuita y premium?</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Gratis</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Captura ilimitada</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>OCR offline</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Búsqueda completa</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Exportar PDF/JPG</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sin publicidad</strong></td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Temas personalizados</strong></td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Backup cifrado</strong></td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Soporte prioritario</strong></td>
+                        <td>❌</td>
+                        <td>✅</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>¿Cuánto cuesta Premium?</h4>
+            <p>
+                <strong>Pago único de €2.99</strong> (sin suscripciones). Una vez comprado, tienes acceso premium de por vida en todos tus dispositivos Android asociados a tu cuenta de Google Play.
+            </p>
+
+            <h4>¿Cómo compro Premium?</h4>
+            <ol>
+                <li>Abre Scanio y ve a <strong>Configuración</strong> → "Actualizar a Premium"</li>
+                <li>Toca <strong>"Comprar ahora"</strong></li>
+                <li>Completa el pago a través de Google Play Store</li>
+                <li>La publicidad desaparecerá automáticamente</li>
+            </ol>
+
+            <h4>¿Puedo obtener un reembolso?</h4>
+            <p>
+                Las compras in-app están sujetas a la <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">política de reembolsos de Google Play</a>. Generalmente, puedes solicitar reembolso en las primeras 48 horas a través de Play Store.
+            </p>
+
+            <h3>⚙️ Configuración y Problemas Técnicos</h3>
+
+            <h4>La app se cierra inesperadamente (crash)</h4>
+            <p>Intenta lo siguiente:</p>
+            <ol>
+                <li><strong>Reinicia tu dispositivo:</strong> Soluciona el 80% de problemas</li>
+                <li><strong>Actualiza Scanio:</strong> Ve a Google Play Store y verifica si hay actualizaciones</li>
+                <li><strong>Libera espacio:</strong> Asegúrate de tener al menos 500MB libres</li>
+                <li><strong>Borra caché:</strong> Configuración → Apps → Scanio → Borrar caché (NO "Borrar datos")</li>
+                <li><strong>Reinstala:</strong> Exporta tus documentos, desinstala y reinstala</li>
+            </ol>
+            <p>
+                Si el problema persiste, envíanos un email a <a href="mailto:support@vmad.eu">support@vmad.eu</a> con:
+            </p>
+            <ul>
+                <li>Modelo de tu dispositivo</li>
+                <li>Versión de Android</li>
+                <li>Versión de Scanio (visible en Configuración → Acerca de)</li>
+                <li>Descripción detallada del problema</li>
+            </ul>
+
+            <h4>El OCR no funciona o tarda mucho</h4>
+            <ul>
+                <li><strong>Primera vez:</strong> ML Kit descarga el modelo (puede tardar unos minutos con conexión)</li>
+                <li><strong>Dispositivo antiguo:</strong> OCR puede ser lento en dispositivos con poco RAM (<2GB)</li>
+                <li><strong>Muchas páginas:</strong> Procesar 50+ páginas puede tardar varios minutos</li>
+                <li><strong>Solución:</strong> Procesa documentos en lotes más pequeños</li>
+            </ul>
+
+            <h4>No veo el snippet OCR en resultados de búsqueda</h4>
+            <p>
+                Asegúrate de que el OCR se haya ejecutado en ese documento. Verifica el badge de estado OCR en la tarjeta del documento. Si dice "Pendiente" o "Parcial", ejecuta OCR manualmente desde el menú ⚙️.
+            </p>
+
+            <h4>La exportación PDF falla</h4>
+            <ul>
+                <li><strong>Espacio insuficiente:</strong> Verifica que tienes espacio libre (cada PDF puede ocupar varios MB)</li>
+                <li><strong>Permisos:</strong> Asegúrate de haber concedido permiso de almacenamiento</li>
+                <li><strong>Imágenes corruptas:</strong> Si alguna página está corrupta, la exportación puede fallar. Intenta eliminar esa página</li>
+            </ul>
+
+            <h4>La cámara no funciona</h4>
+            <ol>
+                <li>Verifica que has concedido permiso de cámara: Configuración → Apps → Scanio → Permisos</li>
+                <li>Reinicia la app</li>
+                <li>Si otro app está usando la cámara, ciérrala</li>
+                <li>Verifica que tu cámara funciona en otras apps (Cámara nativa)</li>
+            </ol>
+
+            <h3>📞 Contacto</h3>
+
+            <h4>Soporte General</h4>
+            <p>
+                <strong>Email:</strong> <a href="mailto:admin@vmad.eu">admin@vmad.eu</a><br>
+                <strong>Tiempo de respuesta:</strong> Menos de 72 horas (generalmente 24-48h)
+            </p>
+
+            <h4>Sugerencias y Feedback</h4>
+            <p>
+                <strong>Email:</strong> <a href="mailto:admin@vmad.eu">admin@vmad.eu</a><br>
+                Nos encantaría saber qué te gusta de Scanio y qué podemos mejorar.
+            </p>
+
+            <h4>Reportar Bugs</h4>
+            <p>
+                <strong>Email:</strong> <a href="mailto:admin@vmad.eu">admin@vmad.eu</a><br>
+                Por favor incluye: modelo de dispositivo, versión de Android, versión de Scanio y pasos para reproducir el error.
+            </p>
+
+            <h4>Privacidad y Legal</h4>
+            <p>
+                <strong>Email:</strong> <a href="mailto:admin@vmad.eu">admin@vmad.eu</a><br>
+                Para consultas sobre privacidad, términos o cuestiones legales.
+            </p>
+
+            <div class="info-box success">
+                <h4>¿No encontraste tu respuesta?</h4>
+                <p>
+                    No dudes en contactarnos a <a href="mailto:admin@vmad.eu">admin@vmad.eu</a>. 
+                    Estamos aquí para ayudarte y mejorar Scanio basándonos en tu feedback.
+                </p>
+            </div>
+        </section>
+
+        <div class="last-updated">
+            <p><strong>Última actualización:</strong> 24 de enero de 2026</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Scanio</h4>
+                <ul>
+                    <li><a href="index.html">Acerca de</a></li>
+                    <li><a href="#">Descargar App</a></li>
+                    <li><a href="support.html">Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:admin@vmad.eu">admin@vmad.eu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Scanio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
