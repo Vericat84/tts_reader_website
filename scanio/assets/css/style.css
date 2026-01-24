@@ -52,19 +52,19 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   text-decoration: none;
   color: var(--text-primary);
 }
 
 .logo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
 }
 
 .logo h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--primary-color);
 }
