@@ -1,0 +1,88 @@
+/* Páginas NarrateX (sobre / términos) — encima de styles.css del sitio */
+.nx-legal-wrap {
+  min-height: 100vh;
+  padding-top: 5.5rem;
+  padding-bottom: var(--spacing-xl, 4rem);
+}
+
+.nx-legal-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md, 1.5rem);
+}
+
+.nx-legal-card {
+  background: var(--bg-card, #2a2f3e);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: var(--spacing-md, 2rem);
+  box-shadow: var(--shadow-lg, 0 10px 25px rgba(0, 0, 0, 0.2));
+}
+
+.nx-legal-card h1 {
+  font-size: var(--font-size-3xl, 2rem);
+  margin-bottom: 0.5rem;
+  background: var(--gradient-primary, linear-gradient(135deg, #667eea, #764ba2, #f093fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nx-legal-card .nx-meta {
+  color: var(--text-muted, #6b7280);
+  font-size: var(--font-size-sm, 0.875rem);
+  margin-bottom: var(--spacing-md, 2rem);
+}
+
+.nx-legal-card h2 {
+  font-size: var(--font-size-xl, 1.25rem);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary, #fff);
+}
+
+.nx-legal-card p,
+.nx-legal-card li {
+  color: var(--text-secondary, #b8bcc8);
+  font-size: var(--font-size-base, 1rem);
+  line-height: 1.7;
+}
+
+.nx-legal-card ul {
+  margin: 0.5rem 0 0 1.25rem;
+}
+
+.nx-legal-card a {
+  color: var(--primary-gradient-mid, #764ba2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(118, 75, 162, 0.4);
+}
+
+.nx-legal-card a:hover {
+  color: var(--text-primary, #fff);
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.nx-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: var(--spacing-md, 2rem);
+  color: var(--text-secondary, #b8bcc8);
+  text-decoration: none;
+  font-size: var(--font-size-sm, 0.875rem);
+  transition: color var(--transition-fast, 0.2s ease);
+}
+
+.nx-back:hover {
+  color: var(--text-primary, #fff);
+}
+
+.nx-badge {
+  display: inline-block;
+  font-size: var(--font-size-xs, 0.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted, #6b7280);
+  margin-bottom: 0.5rem;
+}
