@@ -1,16 +1,123 @@
-/* Páginas NarrateX (sobre / términos) — encima de styles.css del sitio */
+/* NarrateX - marca y páginas legales (sobre /styles.css de VMAD) */
+:root {
+  --nx-accent: #7C9EFF;
+  --nx-accent-mid: #5B6EE1;
+  --nx-accent-deep: #2E3A8C;
+  --nx-glow: rgba(124, 158, 255, 0.22);
+  --nx-card-border: rgba(124, 158, 255, 0.15);
+}
+
+/* Acento en hero NarrateX */
+.hero.nx-app-hero {
+  min-height: auto;
+  padding-bottom: 2rem;
+}
+.hero.nx-app-hero .orb-1 {
+  background: linear-gradient(160deg, var(--nx-deep-orb, #3d4a9a), var(--nx-accent-mid)) !important;
+}
+.hero.nx-app-hero .orb-2 {
+  background: var(--nx-accent) !important;
+  opacity: 0.5;
+}
+.hero.nx-app-hero .orb-3 {
+  background: #a78bfa !important;
+  opacity: 0.4;
+}
+.nx-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+.nx-icon-badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--nx-accent-mid), var(--nx-accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 20px var(--nx-glow);
+}
+.nx-name {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #fff, var(--nx-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hub /narratex/ */
+.nx-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 3rem;
+}
+.nx-hub-card {
+  background: var(--bg-card, #2a2f3e);
+  border: 1px solid var(--nx-card-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--text-primary, #fff);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.nx-hub-card::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gradient-primary, linear-gradient(90deg, var(--nx-accent-mid), var(--nx-accent)));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.nx-hub-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+  border-color: rgba(124, 158, 255, 0.35);
+}
+.nx-hub-card:hover::after { opacity: 1; }
+.nx-hub-card h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.4rem;
+}
+.nx-hub-card p {
+  margin: 0;
+  color: var(--text-secondary, #b8bcc8);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.nx-hub-emoji { font-size: 2rem; margin-bottom: 0.75rem; }
+
+/* CTA bajo features */
+.nx-cta-strip {
+  margin: 2rem 0 0;
+  padding: 1.5rem 1.5rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(46, 58, 140, 0.25) 0%, transparent 100%);
+  border-radius: 16px;
+  border: 1px solid var(--nx-card-border);
+}
+.nx-cta-strip .btn { margin: 0.25rem; }
+
+/* Páginas legales (privacidad / términos) */
 .nx-legal-wrap {
   min-height: 100vh;
   padding-top: 5.5rem;
   padding-bottom: var(--spacing-xl, 4rem);
 }
-
 .nx-legal-inner {
   max-width: 46rem;
   margin: 0 auto;
   padding: 0 var(--spacing-md, 1.5rem);
 }
-
 .nx-legal-card {
   background: var(--bg-card, #2a2f3e);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -18,7 +125,6 @@
   padding: var(--spacing-md, 2rem);
   box-shadow: var(--shadow-lg, 0 10px 25px rgba(0, 0, 0, 0.2));
 }
-
 .nx-legal-card h1 {
   font-size: var(--font-size-3xl, 2rem);
   margin-bottom: 0.5rem;
@@ -27,62 +133,62 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 .nx-legal-card .nx-meta {
   color: var(--text-muted, #6b7280);
   font-size: var(--font-size-sm, 0.875rem);
-  margin-bottom: var(--spacing-md, 2rem);
+  margin-bottom: 1.5rem;
 }
-
 .nx-legal-card h2 {
   font-size: var(--font-size-xl, 1.25rem);
   margin-top: 1.75rem;
   margin-bottom: 0.75rem;
   color: var(--text-primary, #fff);
 }
-
-.nx-legal-card p,
-.nx-legal-card li {
+.nx-legal-prose p,
+.nx-legal-prose li {
   color: var(--text-secondary, #b8bcc8);
-  font-size: var(--font-size-base, 1rem);
-  line-height: 1.7;
+  line-height: 1.75;
+  margin: 0.5rem 0 0.85rem;
 }
-
-.nx-legal-card ul {
-  margin: 0.5rem 0 0 1.25rem;
-}
-
-.nx-legal-card a {
-  color: var(--primary-gradient-mid, #764ba2);
+.nx-legal-prose ul { margin: 0.3rem 0 0.8rem 1.2rem; }
+.nx-legal-prose a {
+  color: var(--nx-accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(118, 75, 162, 0.4);
+  border-bottom: 1px solid rgba(124, 158, 255, 0.4);
 }
-
-.nx-legal-card a:hover {
-  color: var(--text-primary, #fff);
-  border-bottom-color: rgba(255, 255, 255, 0.4);
+.nx-legal-prose a:hover { color: #fff; }
+.nx-callout {
+  border-left: 4px solid var(--nx-accent);
+  background: rgba(124, 158, 255, 0.08);
+  padding: 1rem 1.1rem;
+  margin: 1.25rem 0;
+  border-radius: 0 10px 10px 0;
+  color: var(--text-secondary, #b8bcc8) !important;
+  font-size: 0.95rem;
 }
-
+.nx-callout strong { color: var(--text-primary, #fff); }
+.nx-toc { font-size: 0.9rem; color: var(--text-muted, #6b7280); margin: 0 0 1rem; }
+.nx-toc a { color: var(--nx-accent) !important; }
 .nx-back {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  margin-bottom: var(--spacing-md, 2rem);
+  margin-bottom: 1.25rem;
   color: var(--text-secondary, #b8bcc8);
   text-decoration: none;
-  font-size: var(--font-size-sm, 0.875rem);
-  transition: color var(--transition-fast, 0.2s ease);
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
 }
-
-.nx-back:hover {
-  color: var(--text-primary, #fff);
+.nx-back:hover { color: var(--text-primary, #fff); }
+.nx-hero-mini {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
-
-.nx-badge {
-  display: inline-block;
-  font-size: var(--font-size-xs, 0.75rem);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted, #6b7280);
-  margin-bottom: 0.5rem;
+.nx-hero-mini h1 {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+  background: var(--gradient-primary, linear-gradient(135deg, #667eea, #f093fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

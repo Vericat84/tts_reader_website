@@ -1,69 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NarrateX - lector con voz y biblioteca. Información.">
-    <title>Sobre NarrateX — VMAD</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/narratex/narratex.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NarrateX — Lector con voz, biblioteca local, EPUB PDF y más. VMAD.">
+  <title>NarrateX — Lector con voz y biblioteca | VMAD</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/narratex/narratex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="/" class="logo" style="text-decoration: none; color: inherit;">
-                    <div class="logo-icon">🚀</div>
-                    <span class="logo-text">VMAD</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/#apps">Aplicaciones</a></li>
-                    <li><a href="/#contact">Contacto</a></li>
-                </ul>
-                <button class="mobile-menu-toggle" aria-label="Abrir menú">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="/narratex/" class="nx-wordmark" style="text-decoration:none">
+          <span class="nx-icon-badge">📖</span>
+          <span class="nx-name">NarrateX</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/narratex/">Inicio NarrateX</a></li>
+          <li><a href="#features">Características</a></li>
+          <li><a href="#screenshots">Capturas</a></li>
+          <li><a href="#descargar">Descargar</a></li>
+          <li><a href="/">VMAD</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero nx-app-hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge">✨ Hecho con Flutter</div>
+          <h1 class="hero-title">Tu biblioteca, <span class="gradient-text">tu voz</span>, tu ritmo</h1>
+          <p class="hero-subtitle">NarrateX — lector con síntesis de voz y diseño pensado para leer largo rato.</p>
+          <p class="hero-description">
+            Abre EPUB, PDF, TXT, Markdown, HTML, DOCX y más. Sincroniza resaltado y audio, busca en la biblioteca
+            y lleva un backup cuando quieras. Los datos de lectura viven en tu dispositivo: tú controlas el contenido.
+          </p>
+          <div class="hero-actions">
+            <a href="#descargar" class="btn btn-primary"><span>📱 Descargar</span></a>
+            <a href="../privacy/" class="btn btn-secondary"><span>🔐 Privacidad</span></a>
+            <a href="../terms/" class="btn btn-secondary"><span>📜 Términos</span></a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">Local</div>
+              <div class="stat-label">Biblioteca y progreso</div>
             </div>
-        </div>
-    </nav>
-
-    <main class="nx-legal-wrap">
-        <div class="nx-legal-inner">
-            <a href="/" class="nx-back">← Volver a vmad.eu</a>
-            <div class="nx-legal-card">
-                <p class="nx-badge">Aplicación</p>
-                <h1>NarrateX</h1>
-                <p class="nx-meta">Lector móvil con énfasis en voz, biblioteca y una experiencia de lectura cuidada.</p>
-
-                <h2>Qué es</h2>
-                <p>
-                    NarrateX es una app para leer tus libros y documentos con soporte de audio y una interfaz
-                    pensada para sesiones largas. Forma parte del software que desarrolla <strong>VMAD</strong>
-                    (Vericat Mierder Application Development), con miras a la accesibilidad, la privacidad y el buen uso
-                    en el dispositivo del usuario.
-                </p>
-
-                <h2>Desarrollo y contacto</h2>
-                <p>
-                    Para consultas sobre la aplicación, incidencias o sugerencias:
-                    <a href="mailto:admin@vmad.eu">admin@vmad.eu</a>
-                </p>
-                <p>Más información: <a href="/">vmad.eu</a></p>
-
-                <h2>Documentos legales</h2>
-                <p>
-                    <a href="/narratex/terms/">Términos de uso (NarrateX)</a>.
-                    Otras políticas del sitio: pie de la <a href="/">página principal</a>.
-                </p>
+            <div class="stat">
+              <div class="stat-number">TTS+</div>
+              <div class="stat-label">Voz en el dispositivo</div>
             </div>
+            <div class="stat">
+              <div class="stat-number">OPDS</div>
+              <div class="stat-label">Catálogos que tú añades</div>
+            </div>
+          </div>
         </div>
-    </main>
-    <script src="/script.js"></script>
+        <div class="hero-image">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="app-preview">
+                <div class="preview-header">
+                  <div class="preview-dot" style="background:var(--nx-accent)"></div>
+                  <div class="preview-dot"></div>
+                  <div class="preview-dot"></div>
+                </div>
+                <div class="preview-content" style="padding-top:0.5rem">
+                  <div class="preview-book" style="height:4rem;opacity:0.9"></div>
+                  <div class="preview-book" style="height:3.2rem;opacity:0.7"></div>
+                  <div class="preview-book" style="height:3.5rem;opacity:0.8"></div>
+                </div>
+                <p style="text-align:center;font-size:0.75rem;color:var(--text-muted);padding:0.5rem">Biblioteca (mockup)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Características</h2>
+        <p class="section-subtitle">Lectura, voz y organización en un solo lugar</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3 class="feature-title">Muchos formatos</h3>
+          <p class="feature-description">EPUB, PDF, TXT, Markdown, HTML, DOCX y más. Importa y organiza en la biblioteca.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎧</div>
+          <h3 class="feature-title">Voz y audio</h3>
+          <p class="feature-description">TTS y motores de voz en dispositivo (p. ej. Sherpa-ONNX / Kokoro), audio en segundo plano y controles de sesión.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Lector cuidado</h3>
+          <p class="feature-description">Vista original con resaltado, temas, imágenes y ajustes para leer cómodo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">Búsqueda y filtros</h3>
+          <p class="feature-description">Busca en la biblioteca e indexa lo que ya has abierto.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">OPDS</h3>
+          <p class="feature-description">Añade catálogos OPDS: la app se conecta a las URLs que configures (no imponemos un catálogo cerrado).</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3 class="feature-title">Backup y compartir</h3>
+          <p class="feature-description">Exporta copia de tu biblioteca; recibe archivos desde otras apps con compartir abiertos en el sistema.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Diseño local-first</h3>
+          <p class="feature-description">Progreso y metadatos en almacenamiento del dispositivo. Sin cuenta obligatoria.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Transparencia</h3>
+          <p class="feature-description">Privacidad y términos propios de NarrateX. Sentry solo si se compila con DSN (p. ej. pre-releases o diagnóstico).</p>
+        </div>
+      </div>
+      <div class="nx-cta-strip" style="max-width:40rem;margin:0 auto 2rem">
+        <a class="btn btn-primary" href="../privacy/">Leer la política de privacidad (NarrateX)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pantallazos</h2>
+        <p class="section-subtitle">Sustituye por capturas reales de la app cuando tengas material</p>
+      </div>
+      <div class="screenshots-grid">
+        <div class="screenshot-item"><div class="screenshot-placeholder"><span>📂 Biblioteca</span><small>Imagen</small></div></div>
+        <div class="screenshot-item"><div class="screenshot-placeholder"><span>📄 Lector</span><small>Imagen</small></div></div>
+        <div class="screenshot-item"><div class="screenshot-placeholder"><span>🎙️ Voz</span><small>Imagen</small></div></div>
+        <div class="screenshot-item"><div class="screenshot-placeholder"><span>🌐 OPDS</span><small>Imagen</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="descargar" class="download">
+    <div class="container">
+      <div class="download-content">
+        <h2 class="download-title">Obtener NarrateX</h2>
+        <p class="download-description">Cuando publiques en Google Play, enlaza el badge aquí. Mientras, puedes distribuir el APK o tienda interna de tu organización.</p>
+        <div class="download-buttons">
+          <a href="#" class="play-store-btn" rel="noopener" style="pointer-events:none;opacity:0.6" title="Enlace pendiente de publicación">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play (próximamente)">
+          </a>
+        </div>
+        <p style="text-align:center;color:var(--text-muted);font-size:0.9rem;margin-top:0.5rem">Actualiza el enlace en esta página al publicar.</p>
+        <div class="download-features">
+          <div class="download-feature"><span class="check-icon">✅</span><span>Privacidad documentada</span></div>
+          <div class="download-feature"><span class="check-icon">✅</span><span>Control del contenido por el usuario</span></div>
+          <div class="download-feature"><span class="check-icon">✅</span><span>Sin cuenta obligatoria</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">VMAD (Vericat Mierder Application Development)</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3 class="contact-title">Email</h3>
+          <p class="contact-info"><a href="mailto:admin@vmad.eu">admin@vmad.eu</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🌐</div>
+          <h3 class="contact-title">Sitio</h3>
+          <p class="contact-info"><a href="/">vmad.eu</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🔐</div>
+          <h3 class="contact-title">Legales</h3>
+          <p class="contact-info"><a href="../privacy/">Privacidad (NarrateX)</a> · <a href="../terms/">Términos</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/script.js"></script>
 </body>
 </html>

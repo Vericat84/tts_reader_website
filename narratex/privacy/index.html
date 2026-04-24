@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de privacidad de la aplicación NarrateX. VMAD.">
+  <title>Política de privacidad — NarrateX — VMAD</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/narratex/narratex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="/narratex/" class="nx-wordmark" style="text-decoration:none">
+          <span class="nx-icon-badge">🔐</span>
+          <span class="nx-name" style="font-size:0.95rem">NarrateX</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/narratex/">NarrateX</a></li>
+          <li><a href="/narratex/about/">Producto</a></li>
+          <li><a href="/narratex/terms/">Términos</a></li>
+          <li><a href="/">VMAD</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <main class="nx-legal-wrap">
+    <div class="nx-legal-inner">
+      <a class="nx-back" href="/narratex/">← Volver a NarrateX</a>
+      <div class="nx-legal-card">
+        <div class="nx-hero-mini" style="margin-top:-0.5rem">
+          <div class="badge" style="display:inline-block">Documento de la app</div>
+          <h1>Política de privacidad (NarrateX)</h1>
+          <p class="nx-meta">Borrador para revisión previa a publicación — Última actualización: 24 de abril de 2026</p>
+        </div>
+        <p class="nx-toc" style="margin-top:0">
+          <a href="#responsable">Responsable</a> ·
+          <a href="#alcance">Alcance</a> ·
+          <a href="#datos">Qué trata</a> ·
+          <a href="#red">Red</a> ·
+          <a href="#derechos">Derechos</a>
+        </p>
+        <div class="nx-legal-prose" id="prose">
+          <div class="nx-callout">
+            <strong>Resumen:</strong> NarrateX está pensada para que la lectura, la biblioteca y la configuración se guarden
+            <strong>en tu dispositivo</strong>. No exigimos cuenta de usuario. Los datos de tus libros no los alojamos
+            en servidores propios. Lo que ocurra en red (p. ej. un catálogo OPDS) depende de las conexiones que
+            tú inicies. Si se incluye Sentry con DSN, puede enviarse información técnica de fallos. Lo detallamos abajo.
+          </div>
+
+          <h2 id="responsable">1. Responsable del tratamiento</h2>
+          <p>
+            <strong>VMAD</strong> (Vericat Mierder Application Development), en el marco de la publicación y mantenimiento
+            de la aplicación <strong>NarrateX</strong>. Contacto: <a href="mailto:admin@vmad.eu">admin@vmad.eu</a> ·
+            <a href="https://vmad.eu">https://vmad.eu</a>
+          </p>
+
+          <h2 id="alcance">2. Alcance</h2>
+          <p>
+            Este documento describe el tratamiento de datos en relación con la <strong>aplicación móvil NarrateX</strong> (p. ej. en Android)
+            y no sustituye por sí sola otras políticas de VMAD o de terceros (p. ej. Google Play, fabricante del dispositivo).
+            Si usas otras secciones del sitio web, aplican sus textos.
+          </p>
+
+          <h2 id="datos">3. Categorías de datos y finalidades</h2>
+          <p>En el funcionamiento normal de la app pueden tratarse, principalmente de forma <strong>local en el dispositivo</strong>:</p>
+          <ul>
+            <li>
+              <strong>Contenido de lectura que añades tú:</strong> archivos o libros importados, descargas desde un OPDS, etc.
+              La app los procesa para mostrarlos, reproducir TTS, guardar progreso y, si lo activas, para buscar en la biblioteca.
+            </li>
+            <li>
+              <strong>Metadatos y estado de la biblioteca:</strong> títulos, progreso de capítulos, ajustes del lector, preferencias
+              (tema, TTS, etc.) almacenados con fines de funcionar la aplicación, no con fines de perfil comercial.
+            </li>
+            <li>
+              <strong>Índices de búsqueda u otros datos auxiliares</strong> generados en dispositivo para búsqueda o rendimiento, según versiones.
+            </li>
+            <li>
+              <strong>Datos técnicos mínimos</strong> propios de Android (p. ej. caché, almacenamiento) como en cualquier app.
+            </li>
+          </ul>
+          <p>
+            <strong>Finalidad:</strong> permitir leer, escuchar, administrar la biblioteca, y opcionalmente conectar
+            a los servicios que tú elijas. No usamos esos datos para <strong>publicidad personalizada de VMAD en NarrateX</strong>,
+            ni para vender perfiles a terceros, dentro del diseño descrito. Los libros o archivos <strong>no se suben a servidores de VMAD
+            de forma requerida por el uso básico</strong> descrito.
+          </p>
+
+          <h2 id="red">4. Conexión a red, servidores terceros y Sentry</h2>
+          <p><strong>Conexión que tú inicies o configure explícitamente</strong> puede existir, entre otras, para:</p>
+          <ul>
+            <li>
+              <strong>Catálogos OPDS:</strong> al indicar la URL, la app solicita a ese servidor tú metadatos o descargas.
+              Ese tercero tiene su propia política. Usa servidores de confianza.
+            </li>
+            <li>
+              <strong>Fuentes tipográficas o recursos de red:</strong> p. ej. carga de fuentes desde <strong>Google Fonts u otros proveedores
+              (política del proveedor)</strong> según el modo en que se empaquete la app.
+            </li>
+            <li>
+              <strong>Reproducción de audio, Bluetooth, notificaciones:</strong> como interfaz con el sistema operativo (permisos habituales
+              de audio, Bluetooth, servicio en primer plano) sin que ello suponga, por parte de VMAD, acceso a tus libros
+              alojados en terceros salvo el uso de los canales técnicos propios (p. ej. reproductor, controles de medios).
+            </li>
+            <li>
+              <strong>Sentry (errores):</strong> en construcciones que inyecten un DSN, puede haber envío a <strong>Sentry</strong> de
+              excepciones, trazas y entorno mínimo de diagnóstico. <strong>En publicaciones sin DSN, Sentry no se inicia y no
+              aplica</strong> este flujo. Ajusta siempre a lo que tenga tu binario.
+            </li>
+          </ul>
+
+          <h2>5. Procesamiento on-device: voz, visión, PDF</h2>
+          <p>
+            Características como TTS, reconocimiento de texto en imágenes/PDF, modelos de voz locales (p. ej. <strong>Sherpa-ONNX, Kokoro</strong>)
+            o <strong>ML Kit</strong> (según plataforma y build) se ejecutan en dispositivo para evitar subir el contenido de
+            los libros a nuestros servidores. Los detalles técnicos pueden variar según el modelo de dispositivo, versión de
+            app y acuerdo con terceros de sistema (p. ej. servicios de Google en el aparato).
+          </p>
+
+          <h2>6. Compartir, backup, recepción de archivos</h2>
+          <p>
+            Si <strong>compartes o exportas</strong> un backup (p. ej. paquete ZIP) o <strong>recibes un fichero de otra app</strong>, quien
+            tenga el archivo, el destino que elijas, o el gestor de archivos son ajenes a VMAD. No controlamos terceros.
+            El backup y la reimportación se realizan bajo acciones explícitas del usuario.
+          </p>
+
+          <h2>7. Permisos (orientativo en Android; revisar manifest del build publicado)</h2>
+          <p>La app puede requerir permisos o capacidades de sistema como: internet; audio; Bluetooth/auriculares;
+            servicio en primer plano para continuar la reproducción; notificaciones; ajuste de audio. El detalle
+            concreto figura en la ficha y en <strong>Permisos</strong> de la instalación en el store.</p>
+
+          <h2 id="derechos">8. Conservación, base legal y derechos (RGPD / LOPDGDD, orientación general)</h2>
+          <p>
+            Los datos almacenados de forma <strong>local en el aparato</strong> se conservan mientras tengas la app y no los borres;
+            al desinstalar o al borrar datos, según el SO, <strong>quedarán bajo el control y los medios técnicos del dispositivo</strong>.
+            Cuando, excepcionalmente, apliquemos tratamientos que nos permitan vincularte a través del correo de contacto, por ejercicio de derechos,
+            la base jurídica sería la de <strong>atender solicitudes</strong> o el interés legítimo/contractual, según el caso, sin perjuicio de requisitos adicionales.
+            Puedes: pedir <strong>acceso, rectificación, supresión, limitación, oposición, portabilidad (cuando proceda) y, si
+            aplica, retirar el consentimiento</strong> frente a tratamientos opcionales; reclamar ante la
+            <strong>Agencia Española de Protección de Datos (AEPD)</strong> u otra autoridad. Para ejercer derechos:
+            <a href="mailto:admin@vmad.eu">admin@vmad.eu</a>.
+          </p>
+
+          <h2>9. Menores</h2>
+          <p>La app no va dirigida a excluir a menores, pero <strong>quien instala o autoriza</strong> es el titular
+          del dispositivo o su tutor. Los contenidos que añade el usuario a la app son de su elección y responsabilidad.</p>
+
+          <h2>10. Menú internacional y actualizaciones</h2>
+          <p>Usuarios fuera de la UE/EEE deben conocer la transferencia a proveedores que puedan asentarse
+          en otros países, según términos de terceros (Sentry, Google, etc. cuando apliquen) y a lo que
+          tenga concretamente la versión instalada. Esta política <strong>no es asesoramiento legal</strong>.</p>
+
+          <h2>11. Cambios</h2>
+          <p>Podremos actualizar este documento. La <strong>fecha de versión</strong> figurará al inicio; el uso
+          de la app tras un cambio relevante requerirá por tu parte tomar conocimiento en esta misma ruta
+          o en canales adecuados. Si hace falta, publicaremos avisos o actualizaremos en Google Play.
+          <strong>Revisad antes de publicar el definitivo en tienda</strong> con asesoramiento que estiméis adecuado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
