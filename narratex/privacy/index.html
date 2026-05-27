@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Política de privacidad de la aplicación NarrateX. VMAD.">
-  <title>Política de privacidad — NarrateX — VMAD</title>
+  <meta name="description" content="Política de privacidad de NarrateX. Qué datos trata la app y dónde se guardan.">
+  <title>Política de privacidad — NarrateX</title>
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/narratex/narratex.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
         </a>
         <ul class="nav-links">
           <li><a href="/narratex/">NarrateX</a></li>
-          <li><a href="/narratex/about/">Producto</a></li>
+          <li><a href="/narratex/about/">Sobre la app</a></li>
           <li><a href="/narratex/terms/">Términos</a></li>
           <li><a href="/">VMAD</a></li>
         </ul>
@@ -34,133 +34,139 @@
       <a class="nx-back" href="/narratex/">← Volver a NarrateX</a>
       <div class="nx-legal-card">
         <div class="nx-hero-mini" style="margin-top:-0.5rem">
-          <div class="badge" style="display:inline-block">Documento de la app</div>
-          <h1>Política de privacidad (NarrateX)</h1>
-          <p class="nx-meta">Borrador para revisión previa a publicación — Última actualización: 24 de abril de 2026</p>
+          <h1>Política de privacidad</h1>
+          <p class="nx-meta">NarrateX · Última actualización: 20 de mayo de 2026</p>
         </div>
         <p class="nx-toc" style="margin-top:0">
+          <a href="#resumen">Resumen</a> ·
           <a href="#responsable">Responsable</a> ·
-          <a href="#alcance">Alcance</a> ·
-          <a href="#datos">Qué trata</a> ·
-          <a href="#red">Red</a> ·
-          <a href="#derechos">Derechos</a>
+          <a href="#local">Datos en el dispositivo</a> ·
+          <a href="#red">Red y terceros</a> ·
+          <a href="#anuncios">Anuncios</a> ·
+          <a href="#derechos">Tus derechos</a>
         </p>
         <div class="nx-legal-prose" id="prose">
-          <div class="nx-callout">
-            <strong>Resumen:</strong> NarrateX está pensada para que la lectura, la biblioteca y la configuración se guarden
-            <strong>en tu dispositivo</strong>. No exigimos cuenta de usuario. Los datos de tus libros no los alojamos
-            en servidores propios. Lo que ocurra en red (p. ej. un catálogo OPDS) depende de las conexiones que
-            tú inicies. Si se incluye Sentry con DSN, puede enviarse información técnica de fallos. Lo detallamos abajo.
+          <div class="nx-callout" id="resumen">
+            <strong>En pocas palabras:</strong> NarrateX guarda tu biblioteca, tu progreso de lectura y tus ajustes
+            <strong>en tu móvil o tablet</strong>. No necesitas cuenta. VMAD no aloja tus libros en sus servidores
+            para que la app funcione. Solo usamos internet cuando tú lo pides (por ejemplo, un catálogo OPDS) o cuando
+            hace falta para servicios integrados (anuncios, fuentes, diagnóstico opcional). Puedes escribirnos en
+            <a href="mailto:admin@vmad.eu">admin@vmad.eu</a> para cualquier duda sobre privacidad.
           </div>
 
-          <h2 id="responsable">1. Responsable del tratamiento</h2>
+          <h2 id="responsable">1. Responsable</h2>
           <p>
-            <strong>VMAD</strong> (Vericat Mierder Application Development), en el marco de la publicación y mantenimiento
-            de la aplicación <strong>NarrateX</strong>. Contacto: <a href="mailto:admin@vmad.eu">admin@vmad.eu</a> ·
-            <a href="https://vmad.eu">https://vmad.eu</a>
+            <strong>VMAD</strong> (Vericat Mierder Application Development), responsable de la app
+            <strong>NarrateX</strong>. Contacto: <a href="mailto:admin@vmad.eu">admin@vmad.eu</a> ·
+            <a href="https://vmad.eu">vmad.eu</a>
           </p>
 
-          <h2 id="alcance">2. Alcance</h2>
+          <h2 id="alcance">2. A quién aplica</h2>
           <p>
-            Este documento describe el tratamiento de datos en relación con la <strong>aplicación móvil NarrateX</strong> (p. ej. en Android)
-            y no sustituye por sí sola otras políticas de VMAD o de terceros (p. ej. Google Play, fabricante del dispositivo).
-            Si usas otras secciones del sitio web, aplican sus textos.
+            Esta política describe el tratamiento de datos relacionado con la aplicación móvil NarrateX (Android).
+            No sustituye las políticas de Google Play, de fabricantes del dispositivo ni de servicios de terceros
+            que tú decidas usar desde la app.
           </p>
 
-          <h2 id="datos">3. Categorías de datos y finalidades</h2>
-          <p>En el funcionamiento normal de la app pueden tratarse, principalmente de forma <strong>local en el dispositivo</strong>:</p>
+          <h2 id="local">3. Qué datos trata la app y dónde se guardan</h2>
+          <p>En el uso habitual, la información se almacena y procesa <strong>en tu dispositivo</strong>:</p>
           <ul>
-            <li>
-              <strong>Contenido de lectura que añades tú:</strong> archivos o libros importados, descargas desde un OPDS, etc.
-              La app los procesa para mostrarlos, reproducir TTS, guardar progreso y, si lo activas, para buscar en la biblioteca.
-            </li>
-            <li>
-              <strong>Metadatos y estado de la biblioteca:</strong> títulos, progreso de capítulos, ajustes del lector, preferencias
-              (tema, TTS, etc.) almacenados con fines de funcionar la aplicación, no con fines de perfil comercial.
-            </li>
-            <li>
-              <strong>Índices de búsqueda u otros datos auxiliares</strong> generados en dispositivo para búsqueda o rendimiento, según versiones.
-            </li>
-            <li>
-              <strong>Datos técnicos mínimos</strong> propios de Android (p. ej. caché, almacenamiento) como en cualquier app.
-            </li>
+            <li><strong>Libros y archivos que importas:</strong> EPUB, PDF, TXT, Markdown, HTML, DOCX y otros formatos compatibles.</li>
+            <li><strong>Datos de lectura:</strong> progreso por capítulo, marcadores, historial, preferencias del lector (tema, voz, velocidad, etc.).</li>
+            <li><strong>Biblioteca:</strong> títulos, portadas, metadatos e índices de búsqueda generados localmente.</li>
+            <li><strong>Copias de seguridad:</strong> si exportas un backup, el archivo queda donde tú lo guardes; VMAD no recibe ese archivo automáticamente.</li>
           </ul>
           <p>
-            <strong>Finalidad:</strong> permitir leer, escuchar, administrar la biblioteca, y opcionalmente conectar
-            a los servicios que tú elijas. No usamos esos datos para <strong>publicidad personalizada de VMAD en NarrateX</strong>,
-            ni para vender perfiles a terceros, dentro del diseño descrito. Los libros o archivos <strong>no se suben a servidores de VMAD
-            de forma requerida por el uso básico</strong> descrito.
+            <strong>Finalidad:</strong> permitirte leer, escuchar, organizar tu biblioteca y recuperar tu progreso.
+            No vendemos tu biblioteca ni creamos perfiles comerciales a partir de lo que lees.
           </p>
 
-          <h2 id="red">4. Conexión a red, servidores terceros y Sentry</h2>
-          <p><strong>Conexión que tú inicies o configure explícitamente</strong> puede existir, entre otras, para:</p>
+          <h2>4. Qué no hacemos</h2>
           <ul>
-            <li>
-              <strong>Catálogos OPDS:</strong> al indicar la URL, la app solicita a ese servidor tú metadatos o descargas.
-              Ese tercero tiene su propia política. Usa servidores de confianza.
-            </li>
-            <li>
-              <strong>Fuentes tipográficas o recursos de red:</strong> p. ej. carga de fuentes desde <strong>Google Fonts u otros proveedores
-              (política del proveedor)</strong> según el modo en que se empaquete la app.
-            </li>
-            <li>
-              <strong>Reproducción de audio, Bluetooth, notificaciones:</strong> como interfaz con el sistema operativo (permisos habituales
-              de audio, Bluetooth, servicio en primer plano) sin que ello suponga, por parte de VMAD, acceso a tus libros
-              alojados en terceros salvo el uso de los canales técnicos propios (p. ej. reproductor, controles de medios).
-            </li>
-            <li>
-              <strong>Sentry (errores):</strong> en construcciones que inyecten un DSN, puede haber envío a <strong>Sentry</strong> de
-              excepciones, trazas y entorno mínimo de diagnóstico. <strong>En publicaciones sin DSN, Sentry no se inicia y no
-              aplica</strong> este flujo. Ajusta siempre a lo que tenga tu binario.
-            </li>
+            <li>No exigimos registro ni cuenta para usar la biblioteca local.</li>
+            <li>No subimos tus libros a servidores de VMAD como parte del funcionamiento básico de la app.</li>
+            <li>No accedemos al contenido de tus archivos fuera de lo necesario para mostrarlos, buscar en ellos o reproducirlos en voz.</li>
           </ul>
 
-          <h2>5. Procesamiento on-device: voz, visión, PDF</h2>
+          <h2 id="red">5. Cuándo hay conexión a internet</h2>
+          <p>La app puede conectarse a la red en estos casos:</p>
+          <ul>
+            <li><strong>Catálogos OPDS:</strong> solo si añades una URL. El servidor OPDS es un tercero con su propia política.</li>
+            <li><strong>Importación por enlace:</strong> si descargas un libro desde una URL que indiques.</li>
+            <li><strong>Modelos de voz:</strong> algunas voces pueden descargarse bajo tu acción; el procesamiento de lectura en voz alta se hace en el dispositivo.</li>
+            <li><strong>Recursos técnicos:</strong> por ejemplo fuentes tipográficas u otros recursos empaquetados o descargados según la versión instalada.</li>
+            <li><strong>Diagnóstico de errores (Sentry):</strong> solo en versiones compiladas con DSN de Sentry. En builds sin DSN, Sentry no se activa. Si aplica, puede enviarse información técnica del fallo (excepción, trazas), no el contenido de tus libros.</li>
+          </ul>
+
+          <h2>6. Procesamiento en el dispositivo</h2>
           <p>
-            Características como TTS, reconocimiento de texto en imágenes/PDF, modelos de voz locales (p. ej. <strong>Sherpa-ONNX, Kokoro</strong>)
-            o <strong>ML Kit</strong> (según plataforma y build) se ejecutan en dispositivo para evitar subir el contenido de
-            los libros a nuestros servidores. Los detalles técnicos pueden variar según el modelo de dispositivo, versión de
-            app y acuerdo con terceros de sistema (p. ej. servicios de Google en el aparato).
+            Funciones como la síntesis de voz (motores locales como Sherpa-ONNX / Kokoro), el reconocimiento de texto
+            en imágenes o PDF (ML Kit, según versión) y la lectura de documentos se ejecutan en tu aparato para
+            no enviar el texto de tus libros a servidores de VMAD.
           </p>
 
-          <h2>6. Compartir, backup, recepción de archivos</h2>
+          <h2 id="anuncios">7. Anuncios (Google AdMob)</h2>
           <p>
-            Si <strong>compartes o exportas</strong> un backup (p. ej. paquete ZIP) o <strong>recibes un fichero de otra app</strong>, quien
-            tenga el archivo, el destino que elijas, o el gestor de archivos son ajenes a VMAD. No controlamos terceros.
-            El backup y la reimportación se realizan bajo acciones explícitas del usuario.
+            La versión gratuita de NarrateX puede mostrar anuncios gestionados por <strong>Google AdMob</strong>
+            (Google LLC). Google puede tratar identificadores del dispositivo y datos técnicos según su propia
+            política de privacidad. Los anuncios pueden ser intersticiales o con recompensa (por ejemplo, tiempo sin
+            intersticiales tras ver un anuncio voluntario).
+          </p>
+          <p>
+            Si adquieres una opción de pago para eliminar anuncios (cuando esté disponible en tu región y versión),
+            dejarán de aplicarse los anuncios según lo indicado en la tienda. En la UE/EEE, Google puede mostrar
+            un flujo de consentimiento (UMP) cuando corresponda.
+          </p>
+          <p>
+            Más información: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a>.
           </p>
 
-          <h2>7. Permisos (orientativo en Android; revisar manifest del build publicado)</h2>
-          <p>La app puede requerir permisos o capacidades de sistema como: internet; audio; Bluetooth/auriculares;
-            servicio en primer plano para continuar la reproducción; notificaciones; ajuste de audio. El detalle
-            concreto figura en la ficha y en <strong>Permisos</strong> de la instalación en el store.</p>
-
-          <h2 id="derechos">8. Conservación, base legal y derechos (RGPD / LOPDGDD, orientación general)</h2>
+          <h2>8. Archivos compartidos y «Abrir con»</h2>
           <p>
-            Los datos almacenados de forma <strong>local en el aparato</strong> se conservan mientras tengas la app y no los borres;
-            al desinstalar o al borrar datos, según el SO, <strong>quedarán bajo el control y los medios técnicos del dispositivo</strong>.
-            Cuando, excepcionalmente, apliquemos tratamientos que nos permitan vincularte a través del correo de contacto, por ejercicio de derechos,
-            la base jurídica sería la de <strong>atender solicitudes</strong> o el interés legítimo/contractual, según el caso, sin perjuicio de requisitos adicionales.
-            Puedes: pedir <strong>acceso, rectificación, supresión, limitación, oposición, portabilidad (cuando proceda) y, si
-            aplica, retirar el consentimiento</strong> frente a tratamientos opcionales; reclamar ante la
-            <strong>Agencia Española de Protección de Datos (AEPD)</strong> u otra autoridad. Para ejercer derechos:
-            <a href="mailto:admin@vmad.eu">admin@vmad.eu</a>.
+            Si recibes un archivo desde otra app o lo abres con NarrateX, el archivo se copia o referencia según el
+            sistema. Si exportas o compartes un backup, quien reciba ese archivo o el servicio que elijas quedan
+            fuera del control de VMAD.
           </p>
 
-          <h2>9. Menores</h2>
-          <p>La app no va dirigida a excluir a menores, pero <strong>quien instala o autoriza</strong> es el titular
-          del dispositivo o su tutor. Los contenidos que añade el usuario a la app son de su elección y responsabilidad.</p>
+          <h2>9. Permisos en Android</h2>
+          <p>Según la versión instalada, la app puede solicitar permisos como:</p>
+          <ul>
+            <li>Internet (OPDS, anuncios, descargas opcionales).</li>
+            <li>Audio y reproducción en segundo plano (TTS y controles de medios).</li>
+            <li>Bluetooth (auriculares y dispositivos de audio).</li>
+            <li>Notificaciones (controles de lectura en voz alta).</li>
+          </ul>
+          <p>El detalle exacto aparece en la ficha de Google Play y en Ajustes → Apps → NarrateX → Permisos.</p>
 
-          <h2>10. Menú internacional y actualizaciones</h2>
-          <p>Usuarios fuera de la UE/EEE deben conocer la transferencia a proveedores que puedan asentarse
-          en otros países, según términos de terceros (Sentry, Google, etc. cuando apliquen) y a lo que
-          tenga concretamente la versión instalada. Esta política <strong>no es asesoramiento legal</strong>.</p>
+          <h2 id="derechos">10. Conservación y tus derechos</h2>
+          <p>
+            Los datos locales se mantienen mientras tengas la app instalada y no borres sus datos. Al desinstalar
+            o borrar datos de la app, la información almacenada en el dispositivo se elimina según el sistema operativo.
+          </p>
+          <p>
+            Si nos escribes por correo, trataremos tu email para responder. Puedes ejercer derechos de acceso,
+            rectificación, supresión, limitación, oposición y portabilidad cuando proceda, y reclamar ante la
+            <strong>Agencia Española de Protección de Datos (AEPD)</strong> u otra autoridad competente.
+            Contacto: <a href="mailto:admin@vmad.eu">admin@vmad.eu</a>.
+          </p>
 
-          <h2>11. Cambios</h2>
-          <p>Podremos actualizar este documento. La <strong>fecha de versión</strong> figurará al inicio; el uso
-          de la app tras un cambio relevante requerirá por tu parte tomar conocimiento en esta misma ruta
-          o en canales adecuados. Si hace falta, publicaremos avisos o actualizaremos en Google Play.
-          <strong>Revisad antes de publicar el definitivo en tienda</strong> con asesoramiento que estiméis adecuado.
+          <h2>11. Menores</h2>
+          <p>
+            NarrateX no está pensada para recopilar datos personales de menores. Quien instala la app en un dispositivo
+            compartido o de un menor debe supervisar el contenido que se importa.
+          </p>
+
+          <h2>12. Usuarios fuera de la Unión Europea</h2>
+          <p>
+            Si usas la app fuera de la UE/EEE, pueden aplicarse leyes locales distintas. Los proveedores integrados
+            (Google, Sentry u otros) pueden procesar datos en países fuera de tu residencia según sus condiciones.
+          </p>
+
+          <h2>13. Cambios en esta política</h2>
+          <p>
+            Podemos actualizar este texto. Publicaremos la fecha de revisión al inicio. Si el cambio es relevante,
+            lo indicaremos en la app o en Google Play. El uso continuado de NarrateX tras la publicación implica
+            que has podido leer la versión actualizada.
           </p>
         </div>
       </div>
