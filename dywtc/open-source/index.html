@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NOTICE, atribuciones y licencias open source de DYWTC.">
+    <title>Código abierto - DYWTC</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="../">
+                <span class="logo-badge">D</span>
+                <span>DYWTC</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../legal/">Legal</a></li>
+                    <li><a href="./">Código abierto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h2>Código abierto y atribuciones</h2>
+            <p>DYWTC redistribuye varios cores y backends de emulación de terceros. Esta página resume los binarios incluidos en la build pública, su licencia y el origen del código fuente.</p>
+
+            <div class="info-box warning">
+                <p><strong>Nota:</strong> DYWTC es un frontend Android propietario. Los cores y backends listados aquí conservan sus licencias originales. La lista vigente debe entenderse junto con el NOTICE incluido dentro de la app.</p>
+            </div>
+
+            <h3>Cores y backends incluidos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plataforma</th>
+                        <th>Core / backend</th>
+                        <th>Licencia</th>
+                        <th>Upstream</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>NES</td><td>fceumm</td><td>GPLv2</td><td><a href="https://github.com/libretro/libretro-fceumm" target="_blank" rel="noopener">libretro/libretro-fceumm</a></td></tr>
+                    <tr><td>SNES</td><td>bsnes-jg</td><td>GPLv3</td><td><a href="https://github.com/jpd002/bsnes-jg" target="_blank" rel="noopener">jpd002/bsnes-jg</a></td></tr>
+                    <tr><td>GB / GBC</td><td>gambatte</td><td>GPLv2</td><td><a href="https://github.com/libretro/gambatte-libretro" target="_blank" rel="noopener">libretro/gambatte-libretro</a></td></tr>
+                    <tr><td>GBA</td><td>gpsp / mgba</td><td>GPLv2 / MPL-2.0</td><td><a href="https://github.com/libretro/gpsp" target="_blank" rel="noopener">libretro/gpsp</a> · <a href="https://github.com/mgba-emu/mgba" target="_blank" rel="noopener">mgba-emu/mgba</a></td></tr>
+                    <tr><td>SMS / GG</td><td>gearsystem</td><td>GPLv3</td><td><a href="https://github.com/drhelius/Gearsystem" target="_blank" rel="noopener">drhelius/Gearsystem</a></td></tr>
+                    <tr><td>Mega Drive</td><td>ares md</td><td>ISC</td><td><a href="https://github.com/ares-emulator/ares" target="_blank" rel="noopener">ares-emulator/ares</a></td></tr>
+                    <tr><td>N64</td><td>mupen64plus-next</td><td>GPLv2</td><td><a href="https://github.com/libretro/mupen64plus-libretro-nx" target="_blank" rel="noopener">libretro/mupen64plus-libretro-nx</a></td></tr>
+                    <tr><td>PSX</td><td>swanstation</td><td>GPLv3</td><td><a href="https://github.com/libretro/swanstation" target="_blank" rel="noopener">libretro/swanstation</a></td></tr>
+                    <tr><td>NDS</td><td>melondsds</td><td>GPLv3</td><td><a href="https://github.com/JesseTG/melonds-ds" target="_blank" rel="noopener">JesseTG/melonds-ds</a></td></tr>
+                    <tr><td>N3DS</td><td>azahar</td><td>GPLv2+</td><td><a href="https://github.com/azahar-emu/azahar" target="_blank" rel="noopener">azahar-emu/azahar</a></td></tr>
+                    <tr><td>PSP</td><td>ppsspp</td><td>GPLv2+</td><td><a href="https://github.com/hrydgard/ppsspp" target="_blank" rel="noopener">hrydgard/ppsspp</a></td></tr>
+                    <tr><td>Dreamcast</td><td>flycast</td><td>GPLv2</td><td><a href="https://github.com/flyinghead/flycast" target="_blank" rel="noopener">flyinghead/flycast</a></td></tr>
+                    <tr><td>Saturn</td><td>mednafen_saturn</td><td>GPLv2</td><td><a href="https://github.com/libretro/beetle-saturn-libretro" target="_blank" rel="noopener">libretro/beetle-saturn-libretro</a></td></tr>
+                    <tr><td>PS2</td><td>play</td><td>MIT</td><td><a href="https://github.com/jpd002/Play-" target="_blank" rel="noopener">jpd002/Play-</a></td></tr>
+                    <tr><td>GC / Wii</td><td>dolphin</td><td>GPLv2+</td><td><a href="https://github.com/libretro/dolphin" target="_blank" rel="noopener">libretro/dolphin</a></td></tr>
+                    <tr><td>VMU</td><td>vemulator</td><td>GPLv3</td><td><a href="https://github.com/libretro/vemulator-libretro" target="_blank" rel="noopener">libretro/vemulator-libretro</a></td></tr>
+                </tbody>
+            </table>
+
+            <h3>NOTICE público</h3>
+            <pre class="notice">DYWTC (`com.dywtc.app`) es un frontend Android propietario. Redistribuye binarios arm64-v8a de cores de terceros. El detalle de SHA, tamaños y pines de fuente está disponible en el NOTICE incluido en la app y en la documentación del proyecto.
+
+Plataformas incluidas en la build pública: NES, SNES, GB/GBC, GBA, SMS/GG, Mega Drive, N64, PSX, NDS, N3DS, PSP, Dreamcast, Saturn, PS2, GameCube, Wii y sidecar VMU.
+
+Textos de licencia relevantes:
+- GPLv2 / GPLv3: https://github.com/spdx/license-list-data
+- MPL-2.0: https://www.mozilla.org/MPL/2.0/
+- ISC: https://spdx.org/licenses/ISC.html
+- MIT: https://spdx.org/licenses/MIT.html</pre>
+
+            <h3>Qué no va incluido</h3>
+            <ul>
+                <li>juegos comerciales o ROMs</li>
+                <li>BIOS y firmware con redistribución restringida</li>
+                <li>cores con restricciones no compatibles con la distribución pública de DYWTC, como `genesis_plus_gx` o `fbneo`</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="../legal/">Legal</a>
+                <a href="../privacy/">Privacidad</a>
+                <a href="../beta/">Beta</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

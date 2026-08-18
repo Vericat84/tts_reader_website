@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DYWTC es un frontend Android para organizar tu biblioteca retro, importar tus propios juegos y jugarlos localmente con enfoque offline-first.">
+    <title>DYWTC - Biblioteca y juego retro en Android</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="./">
+                <span class="logo-badge">D</span>
+                <span>DYWTC</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./">Inicio</a></li>
+                    <li><a href="privacy/">Privacidad</a></li>
+                    <li><a href="support/">Soporte</a></li>
+                    <li><a href="legal/">Legal</a></li>
+                    <li><a href="open-source/">Código abierto</a></li>
+                    <li><a href="beta/">Beta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="eyebrow">Android · Offline-first · Closed Beta</span>
+            <h1>Tu biblioteca retro, organizada y lista para jugar</h1>
+            <p class="subtitle">
+                DYWTC es una aplicación para Android orientada a importar tus propios juegos,
+                mantener una biblioteca local, lanzar varias plataformas retro y continuar tu progreso
+                con una experiencia pensada para móvil.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="beta/">Ver alcance de la beta</a>
+                <a class="btn btn-secondary" href="support/">Contactar soporte</a>
+            </div>
+            <div class="pill-row">
+                <span class="pill">Sin ROMs incluidas</span>
+                <span class="pill">Importa tus propios dumps</span>
+                <span class="pill">Ajustes legales públicos para Play</span>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Qué hace DYWTC</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Biblioteca local</h3>
+                    <p>Importa tus juegos desde el almacenamiento del dispositivo, organiza la colección y consulta detalles por plataforma.</p>
+                </article>
+                <article class="card">
+                    <h3>Juego local</h3>
+                    <p>Lanza títulos compatibles en el propio dispositivo y continúa donde lo dejaste, con foco en experiencia portátil.</p>
+                </article>
+                <article class="card">
+                    <h3>Continuidad y backup</h3>
+                    <p>Incluye circuitos de guardado y opciones de backup; algunas funciones de nube son opcionales y requieren inicio de sesión con Google.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Plataformas de la beta actual</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Familia</th>
+                        <th>Core o backend</th>
+                        <th>Licencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>NES</td><td>fceumm</td><td>GPLv2</td></tr>
+                    <tr><td>SNES</td><td>bsnes-jg</td><td>GPLv3</td></tr>
+                    <tr><td>GB / GBC</td><td>gambatte</td><td>GPLv2</td></tr>
+                    <tr><td>GBA</td><td>mgba / gpsp</td><td>MPL-2.0 / GPLv2</td></tr>
+                    <tr><td>SMS / GG</td><td>gearsystem</td><td>GPLv3</td></tr>
+                    <tr><td>Mega Drive</td><td>ares md</td><td>ISC</td></tr>
+                    <tr><td>N64</td><td>mupen64plus-next</td><td>GPLv2</td></tr>
+                    <tr><td>PSX</td><td>swanstation</td><td>GPLv3</td></tr>
+                    <tr><td>NDS / N3DS</td><td>melondsds / azahar</td><td>GPLv3 / GPLv2+</td></tr>
+                    <tr><td>PSP / DC / Saturn / PS2 / GC / Wii / VMU</td><td>ppsspp / flycast / mednafen_saturn / play / dolphin / vemulator</td><td>GPLv2+ / GPLv2 / GPLv2 / MIT / GPLv2+ / GPLv3</td></tr>
+                </tbody>
+            </table>
+            <p class="small">Consulta el detalle legal y el inventario de cores en <a href="open-source/">Código abierto</a>.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Importante antes de usarla</h2>
+            <div class="info-box warning">
+                <p><strong>DYWTC no incluye juegos, BIOS ni enlaces de adquisición.</strong> Debes usar únicamente copias y archivos del sistema que tengas derecho a utilizar en tu jurisdicción.</p>
+            </div>
+            <ul>
+                <li>Algunas plataformas requieren BIOS, system files o keys aportadas por el usuario.</li>
+                <li>La beta está orientada a pruebas reales de compatibilidad, rendimiento y continuidad.</li>
+                <li>Determinadas funciones en línea o de metadatos dependen de servicios externos y pueden cambiar.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <strong>DYWTC</strong>
+            <div class="footer-links">
+                <a href="privacy/">Privacidad</a>
+                <a href="support/">Soporte</a>
+                <a href="legal/">Legal</a>
+                <a href="open-source/">Código abierto</a>
+                <a href="https://vmad.eu/">VMAD</a>
+            </div>
+            <p class="small">Sitio público de apoyo para Play Store y para la documentación pública del proyecto.</p>
+        </div>
+    </footer>
+</body>
+</html>
